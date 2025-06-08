@@ -1,106 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Star Kids</title>
-<style>
-/* CSS embutido */
-body {
-font-family: Arial, sans-serif;
-background-color: #f0f8ff;
-color: #333;
-margin: 0;
-padding: 20px;
-}
-header {
-background-color: #ffcc00;
-text-align: center;
-padding: 20px;
-border-radius: 10px;
-}
-header h1 {
-color: #fff;
-font-size: 2.5em;
-}
-header img {
-width: 300px;
-height: auto;
-margin: 15px 0;
-border-radius: 10px;
-}
-header p {
-font-style: italic;
-color: #444;
-}
-nav ul {
-list-style: none;
-padding: 0;
-margin-top: 10px;
-}
-nav ul li {
-display: inline-block;
-margin: 0 15px;
-
-}
-nav ul li a {
-text-decoration: none;
-color: #003366;
-font-weight: bold;
-}
-main {
-margin-top: 30px;
-}
-.conteudo {
-background-color: #ffffff;
-padding: 20px;
-border-radius: 10px;
-}
-.conteudo h2 {
-color: #0077cc;
-margin-bottom: 15px;
-}
-article {
-margin-bottom: 20px;
-}
-article h3 {
-color: #333;
-font-size: 1.2em;
-}
-article p {
-color: #666;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rota dos Sabores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
 </head>
-<body>
-<header>
-<h1>Star Kids</h1>
-<img src="foto-brinquedo.jpg" alt="Foto de um tobogã inflável">
-<p>Diversão garantida para a criançada!</p>
-<nav>
-<ul>
-<li><a href="#subtitulo1">Subtítulo 1</a></li>
-<li><a href="#subtitulo2">Subtítulo 2</a></li>
-<li><a href="#subtitulo3">Subtítulo 3</a></li>
-</ul>
+<body class="bg-black bg-opacity-70 text-white min-h-screen">
 
-</nav>
-</header>
-<main>
-<section id="subtitulo1" class="conteudo">
-<h2>Subtítulo 1</h2>
-<article>
-<h3>Brincadeira Saudável</h3>
-<p>As crianças aprendem enquanto se divertem com segurança.</p>
-</article>
-<article>
-<h3>Ambiente Seguro</h3>
-<p>Nossos brinquedos infláveis seguem todas as normas de segurança.</p>
-</article>
-<article>
-<h3>Equipe Treinada</h3>
-<p>Monitores preparados garantem a diversão sem preocupação.</p>
-</article>
-</section>
-</main>
+  <!-- Cabeçalho -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold">Rota dos Sabores</h1>
+    <p class="text-lg mt-2">Escolha o tipo de lugar que você procura:</p>
+  </header>
+
+  <!-- TÓPICOS COM IMAGENS CLICÁVEIS -->
+  <section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 mb-12">
+    
+    <!-- FESTEJAR -->
+    <a href="#festejar" class="block bg-white bg-opacity-10 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src="https://images.unsplash.com/photo-1559628233-4c1ab7b2b6f8" class="w-full h-48 object-cover" alt="Festejar">
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold">Festejar</h2>
+        <p class="text-sm text-gray-200">Espaços para comemorações</p>
+      </div>
+    </a>
+
+    <!-- JANTAR -->
+    <a href="#jantar" class="block bg-white bg-opacity-10 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" class="w-full h-48 object-cover" alt="Jantar">
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold">Jantar</h2>
+        <p class="text-sm text-gray-200">Restaurantes para ocasiões especiais</p>
+      </div>
+    </a>
+
+    <!-- LANCHES -->
+    <a href="#lanches" class="block bg-white bg-opacity-10 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" class="w-full h-48 object-cover" alt="Lanches">
+      <div class="p-4 text-center">
+        <h2 class="text-xl font-semibold">Lanches</h2>
+        <p class="text-sm text-gray-200">Hamburguerias, pizzarias e mais</p>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- SEÇÃO: FESTEJAR -->
+  <section id="festejar" class="max-w-4xl mx-auto px-4 mb-12">
+    <h2 class="text-3xl font-bold mb-4">🎉 Lugares para Festejar</h2>
+    <p class="text-gray-300 mb-6">Salões, bares e espaços ideais para comemorações.</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white bg-opacity-10 p-4 rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1588854337115-1cf1f26ef3d7" class="w-full h-40 object-cover rounded">
+        <h3 class="text-xl mt-3 font-semibold">Espaço Celebration</h3>
+        <p class="text-sm text-gray-200">Ideal para aniversários, casamentos e eventos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: JANTAR -->
+  <section id="jantar" class="max-w-4xl mx-auto px-4 mb-12">
+    <h2 class="text-3xl font-bold mb-4">🍽️ Lugares para Jantar</h2>
+    <p class="text-gray-300 mb-6">Ambientes românticos e restaurantes refinados.</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white bg-opacity-10 p-4 rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1555992336-03a23c07bfd6" class="w-full h-40 object-cover rounded">
+        <h3 class="text-xl mt-3 font-semibold">La Bella Massa</h3>
+        <p class="text-sm text-gray-200">Massas artesanais e clima aconchegante.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: LANCHES -->
+  <section id="lanches" class="max-w-4xl mx-auto px-4 mb-20">
+    <h2 class="text-3xl font-bold mb-4">🍔 Lugares para Lanches</h2>
+    <p class="text-gray-300 mb-6">Hamburguerias, pizzarias e lugares rápidos.</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white bg-opacity-10 p-4 rounded-lg shadow-lg">
+        <img src="https://images.unsplash.com/photo-1606755962773-0c05be208b17" class="w-full h-40 object-cover rounded">
+        <h3 class="text-xl mt-3 font-semibold">Burger & Beer</h3>
+        <p class="text-sm text-gray-200">Burgers artesanais e chopes variados.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+
 </body>
 </html>
